@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rock-paper-scissors.css">
+</head>
+<body>
+    <div class="main">
+
+    
+        <p class="title">Rock Paper Scissors</p>
+        <div class="btn">
+            <button class="move-button" onclick="playGame('Rock');"><img src="img/rock-emoji.png" alt="Rock emoji" class="move-icon"></button>
+
+            <button class="move-button" onclick="playGame('Paper');"><img src="img/paper-emoji.png" alt="paper emoji" class="move-icon"></button>
+
+            <button class="move-button" onclick="playGame('Scissors');"><img src="img/scissors-emoji.png" alt="scissors emoji" class="move-icon"></button>
+        </div>
+
+        <p class="js-result result"></p>
+        <p class="js-moves"></p>
+        <p class="js-score score"></p>
+
+        <button onclick="
+            score.wins = 0;
+            score.losses = 0;
+            score.ties = 0;
+            localStorage.removeItem('score');
+            updateScoreElement();
+    " class="reset-score-btn">Reset Score</button>
+  </div>
+  <footer>
+  <p>&copy; 2025 Rock Paper Scissors Game | Developed by Mr Pk</p>
+  <p>
+    <a href="https://www.linkedin.com/in/thepremkumar/" target="_blank" style="margin-right: 15px;">LinkedIn</a>
+    |
+    <a href="https://github.com/ThePremkumar" target="_blank" style="margin-left: 15px;">GitHub</a>
+  </p>
+</footer>
+
+
+
+    <script src="rock-paper-scissors.js"></script>
+</body>
+</html>
